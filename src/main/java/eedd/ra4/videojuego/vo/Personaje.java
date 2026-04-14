@@ -9,12 +9,13 @@ package eedd.ra4.videojuego.vo;
  * 
  * 
  */
-public class Personaje {
+public class Personaje implements IAtacable {
     public String nombre;
     public int vida;
     public int nivel;
     
-    public void atacar(Personaje objetivo) {
+    @Override
+	public void atacar(Personaje objetivo) {
         int danio = nivel * 10;
         aplicarDanio(objetivo, danio);
     }
