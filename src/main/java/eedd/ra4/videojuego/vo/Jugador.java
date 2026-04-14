@@ -24,8 +24,8 @@ public class Jugador extends Personaje {
         }
     }
     
-    public void ataqueEspecial(Enemigo enemigo) {
+    public void ataqueEspecial(Personaje objetivo) {
         int danio = nivel * Jugador.MULTIPLICADOR_DANIO;
-        enemigo.vida -= danio;
+        objetivo.vida -= danio;
     }
 }
