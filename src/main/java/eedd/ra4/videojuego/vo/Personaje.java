@@ -16,6 +16,14 @@ public class Personaje {
     
     public void atacar(Personaje objetivo) {
         int danio = nivel * 10;
-        objetivo.vida -= danio;
+        aplicarDanio(objetivo, danio);
     }
+
+	/**
+	 * @param objetivo
+	 * @param danio
+	 */
+	private void aplicarDanio(Personaje objetivo, int danio) {
+		objetivo.vida -= danio;
+	}
 }
