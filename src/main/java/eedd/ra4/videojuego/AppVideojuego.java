@@ -15,20 +15,20 @@ import eedd.ra4.videojuego.vo.Jugador;
 
 public class AppVideojuego {
     public static void main(String[] args) {
-        Jugador j = new Jugador();
-        j.nombre = "Héroe";
-        j.vida = 100;
-        j.nivel = 5;
-        j.experiencia = 50;
+        Jugador jugador = new Jugador();
+        jugador.nombre = "Héroe";
+        jugador.vida = 100;
+        jugador.nivel = 5;
+        jugador.experiencia = 50;
 
-        Enemigo e = new Enemigo();
-        e.nombre = "Orco";
-        e.vida = 80;
-        e.nivel = 3;
-        e.tipo = "Guerrero";
+        Enemigo enemigo = new Enemigo();
+        enemigo.nombre = "Orco";
+        enemigo.vida = 80;
+        enemigo.nivel = 3;
+        enemigo.tipo = "Guerrero";
         
-        j.atacar(e);
+        jugador.atacar(enemigo);
 
-        System.out.println("Vida del enemigo: " + e.vida);
+        System.out.println("Vida del enemigo: " + enemigo.vida);
     }
 }
